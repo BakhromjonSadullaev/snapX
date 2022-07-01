@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Roboto:wght@100;300;400;500;700;900&family=Shadows+Into+Light&family=Water+Brush&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+}
+nav > ul {
+  background-color: #00bdfe;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  padding: 0 3rem;
+}
+nav > ul > li {
+  margin: 0 20px;
+}
+nav > button {
+  border: 1px solid #00bdfe;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #00bdfe;
+  background-color: white;
+  transition: 0.5s ease all;
+}
+nav > button:hover {
+  background-color: #00bdfe;
+  color: white;
+}
+.burger_menu {
+  display: none;
+  font-size: 1.4rem;
+  color: #00bdfe;
+}
+@media only screen and (max-width: 900px) {
+  nav > ul {
+    display: none;
+  }
+  .burger_menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  nav > button {
+    display: none;
+  }
+}
