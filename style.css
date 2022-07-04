@@ -41,6 +41,118 @@ nav > button:hover {
   font-size: 1.4rem;
   color: #00bdfe;
 }
+header {
+  background-image: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/banner-bg.jpg);
+  background-position: center;
+  height: calc(100vh - 10vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.header_info {
+  max-width: 1000px;
+  color: white;
+  text-align: center;
+}
+.header_info > h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.line {
+  background-color: gray;
+  height: 1px;
+}
+.header_info > p {
+  margin: 3rem 0 4rem 0;
+}
+.btn_container > button:nth-child(1) {
+  padding: 15px 25px;
+  background: transparent;
+  border: solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+.btn_container > button:nth-child(1):hover {
+  background-color: white;
+  color: #00bdfe;
+}
+.btn_container > button:nth-child(2) {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.btn_container > button:nth-child(2):hover {
+  color: #00bdfe;
+}
+.profile_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: -80px;
+  flex-wrap: wrap;
+}
+.profile_container > article {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.profile_container > article > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_overlay {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: rgba(245, 245, 245, 0.764);
+  bottom: 0;
+  z-index: 2;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.profile_container > article:hover .profile_overlay {
+  height: 100%;
+}
+
+.profile_overlay > h2 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #00bdfe;
+}
+
+.profile_overlay > ul {
+  list-style: none;
+}
+
+.profile_overlay > ul > li {
+  margin: 1rem 0;
+}
+@media only screen and (max-width: 1300px) {
+  .profile_container > article:nth-child(2),
+  .profile_container > article:nth-child(3) {
+    display: none;
+  }
+  .profile_container > article:nth-child(1) {
+    width: 800px;
+    height: 500px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   nav > ul {
     display: none;
@@ -52,5 +164,11 @@ nav > button:hover {
 @media only screen and (max-width: 500px) {
   nav > button {
     display: none;
+  }
+  .header_info > h1 {
+    font-size: 2rem;
+  }
+  .profile_container {
+    top: -10px;
   }
 }
