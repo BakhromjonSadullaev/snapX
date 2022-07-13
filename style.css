@@ -143,48 +143,177 @@ header {
   margin: 1rem 0;
 }
 
-  /*CORUSEL SECTION STYLES */
-  /*note: no media queries used*/
-.corusel_section{
+.fotos_section {
+  padding: 2rem 0;
+}
+
+.categories_title {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: flex-start;
+}
+.left_title > p {
+  color: #00bdfe;
+  margin-bottom: 13px;
+}
+
+.categories_title > button {
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: white;
+  background-color: #00bdfe;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #00bdfe;
+  transition: 0.5s ease;
+}
+.categories_title > button:hover {
+  color: #00bdfe;
+  background-color: white;
+}
+.foto_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.foto_block {
+  border: 1px solid rgb(205, 205, 205);
+  max-width: 320px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+  min-height: 450px;
+}
+.foto_title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.foto_title > img {
+  background-color: rgb(247, 246, 246);
+  padding: 13px 10px;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+.foto_name > h3 {
+  margin-bottom: 13px;
+}
+.foto_name > p {
+  color: gray;
+}
+.contest {
+  margin-top: 1rem;
+}
+.foto_name > p > span {
+  color: #00bdfe;
+  background-color: white;
+  padding: 7px 10px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+  margin-right: 8px;
+  border-radius: 10px;
+}
+.foto {
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease all;
+}
+
+.foto:hover .likes {
+  transition: 0.5s ease all;
+  top: 15px;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  padding: 0 1rem;
+  overflow: hidden;
+  transition: 0.2s ease all;
+}
+
+.likes > p {
+  padding: 12px;
+  background-color: white;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #00bdfe;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.foto > img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.foto_block > button {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #00bdfe;
+  border-radius: 7px;
+  background-color: white;
+  color: #00bdfe;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.foto_block > button:hover {
+  background-color: #00bdfe;
+  color: white;
+}
+
+/*CORUSEL SECTION STYLES */
+/*note: no media queries used*/
+.corusel_section {
   background-image: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/closed-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding: 5rem 1rem;
 }
-.corusel_section>p{
-color: #00bdfe;
-margin-bottom: 1rem;
+.corusel_section > p {
+  color: #00bdfe;
+  margin-bottom: 1rem;
 }
-.corusel_section>h2{
+.corusel_section > h2 {
   font-size: 1.7rem;
 }
-.corusel_section>main{
+.corusel_section > main {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   margin: 4rem 0 1rem 0;
 }
-.winner_card{
+.winner_card {
   max-width: 400px;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
-  
 }
 
-.winner_img{
+.winner_img {
   position: relative;
-  
 }
 
-.winner_img>img{
+.winner_img > img {
   width: 100%;
   height: 100%;
 }
 
-.winner_overlay{
+.winner_overlay {
   position: absolute;
   width: 100%;
   display: flex;
@@ -193,49 +322,47 @@ margin-bottom: 1rem;
   transition: 0.2s ease;
 }
 
-.winner_overlay > p{
+.winner_overlay > p {
   padding: 10px;
   background-color: white;
   font-size: 14px;
   border-radius: 10px;
-  color: #00bdfe;
-  font-weight: 600;
-  cursor: pointer;
 }
 
-.winner_card:hover .winner_overlay{
+.winner_card:hover .winner_overlay {
   top: 30px;
   transition: 0.5s ease;
 }
 
-.winner_info{
+.winner_info {
   padding: 2rem 1rem;
 }
 
-.winner_info div{
+.winner_info div {
   display: flex;
   justify-content: space-between;
 }
-.winner_info div>p{
-color: grey;
+.winner_info div > p {
+  color: grey;
 }
-.winner_info>div:nth-child(1){
+.winner_info > div:nth-child(1) {
   margin-bottom: 13px;
 }
-.corusel_section>button{
+.corusel_section > button {
   all: unset;
   border: 1px solid #00bdfe;
   padding: 12px 20px;
   border-radius: 10px;
   color: #00bdfe;
-  transition: .5s ease all;
+  transition: 0.5s ease all;
   cursor: pointer;
 }
-.corusel_section>button:hover{
+.corusel_section > button:hover {
   background-color: #00bdfe;
   color: white;
 }
 /*CORUSEL SECTION STYLES */
+
 @media only screen and (max-width: 1300px) {
   .profile_container > article:nth-child(2),
   .profile_container > article:nth-child(3) {
@@ -254,6 +381,9 @@ color: grey;
   .burger_menu {
     display: block;
   }
+  .fotos_section {
+    margin-top: 4rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   nav > button {
@@ -264,5 +394,15 @@ color: grey;
   }
   .profile_container {
     top: -10px;
+    padding: 0 1rem;
+  }
+  .categories_title {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .categories_title > button {
+    margin-top: 1rem;
   }
 }
