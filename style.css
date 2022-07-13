@@ -142,6 +142,137 @@ header {
 .profile_overlay > ul > li {
   margin: 1rem 0;
 }
+
+.fotos_section {
+  padding: 2rem 0;
+}
+
+.categories_title {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: flex-start;
+}
+.left_title > p {
+  color: #00bdfe;
+  margin-bottom: 13px;
+}
+
+.categories_title > button {
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: white;
+  background-color: #00bdfe;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #00bdfe;
+  transition: 0.5s ease;
+}
+.categories_title > button:hover {
+  color: #00bdfe;
+  background-color: white;
+}
+.foto_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.foto_block {
+  border: 1px solid rgb(205, 205, 205);
+  max-width: 320px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+  min-height: 450px;
+}
+.foto_title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.foto_title > img {
+  background-color: rgb(247, 246, 246);
+  padding: 13px 10px;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+.foto_name > h3 {
+  margin-bottom: 13px;
+}
+.foto_name > p {
+  color: gray;
+}
+.contest {
+  margin-top: 1rem;
+}
+.foto_name > p > span {
+  color: #00bdfe;
+  background-color: white;
+  padding: 7px 10px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+  margin-right: 8px;
+  border-radius: 10px;
+}
+.foto {
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease all;
+}
+
+.foto:hover .likes {
+  transition: 0.5s ease all;
+  top: 15px;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  padding: 0 1rem;
+  overflow: hidden;
+  transition: 0.2s ease all;
+}
+
+.likes > p {
+  padding: 12px;
+  background-color: white;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #00bdfe;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.foto > img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.foto_block > button {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #00bdfe;
+  border-radius: 7px;
+  background-color: white;
+  color: #00bdfe;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.foto_block > button:hover {
+  background-color: #00bdfe;
+  color: white;
+}
 @media only screen and (max-width: 1300px) {
   .profile_container > article:nth-child(2),
   .profile_container > article:nth-child(3) {
@@ -160,6 +291,9 @@ header {
   .burger_menu {
     display: block;
   }
+  .fotos_section {
+    margin-top: 4rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   nav > button {
@@ -170,5 +304,15 @@ header {
   }
   .profile_container {
     top: -10px;
+    padding: 0 1rem;
+  }
+  .categories_title {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .categories_title > button {
+    margin-top: 1rem;
   }
 }
