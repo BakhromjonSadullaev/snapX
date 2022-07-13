@@ -273,6 +273,96 @@ header {
   background-color: #00bdfe;
   color: white;
 }
+
+/*CORUSEL SECTION STYLES */
+/*note: no media queries used*/
+.corusel_section {
+  background-image: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/closed-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.corusel_section > p {
+  color: #00bdfe;
+  margin-bottom: 1rem;
+}
+.corusel_section > h2 {
+  font-size: 1.7rem;
+}
+.corusel_section > main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 4rem 0 1rem 0;
+}
+.winner_card {
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.winner_img {
+  position: relative;
+}
+
+.winner_img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.winner_overlay {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  top: -40px;
+  transition: 0.2s ease;
+}
+
+.winner_overlay > p {
+  padding: 10px;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.winner_card:hover .winner_overlay {
+  top: 30px;
+  transition: 0.5s ease;
+}
+
+.winner_info {
+  padding: 2rem 1rem;
+}
+
+.winner_info div {
+  display: flex;
+  justify-content: space-between;
+}
+.winner_info div > p {
+  color: grey;
+}
+.winner_info > div:nth-child(1) {
+  margin-bottom: 13px;
+}
+.corusel_section > button {
+  all: unset;
+  border: 1px solid #00bdfe;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #00bdfe;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.corusel_section > button:hover {
+  background-color: #00bdfe;
+  color: white;
+}
+/*CORUSEL SECTION STYLES */
+
 @media only screen and (max-width: 1300px) {
   .profile_container > article:nth-child(2),
   .profile_container > article:nth-child(3) {
